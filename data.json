@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Native newsletter",
+    "value": "native-nl",
+    "filename": "native-nl.jpg",
+    "type": "newsletter"
+  },
+  {
+    "name": "Insertion newsletter",
+    "value": "insertion-nl",
+    "filename": "insertion-nl.jpg",
+    "type": "newsletter"
+  },
+  {
+    "name": "Habillage newsletter",
+    "value": "habillage-nl",
+    "filename": "habillage-nl.jpg",
+    "type": "newsletter"
+  },
+  {
+    "name": "Newsletter sur mesure",
+    "value": "custom-nl",
+    "filename": "custom-nl.jpg",
+    "type": "newsletter"
+  },
+  {
+    "name": "Insertion email",
+    "value": "insertion-email",
+    "filename": "insertion-email.jpg",
+    "type": "emailing"
+  },
+  {
+    "name": "Coregistration",
+    "value": "coregistration",
+    "filename": "coregistration.jpg",
+    "type": "Coregistration"
+  },
+  {
+    "name": "Article CTC",
+    "value": "article-ctc",
+    "filename": "article-ctc.jpg",
+    "type": "content to commerce"
+  },
+  {
+    "name": "Pavé display",
+    "value": "pave-display",
+    "filename": "pave-display.jpg",
+    "type": "display"
+  },
+  {
+    "name": "Habillage display",
+    "value": "habillage-display",
+    "filename": "habillage-display.jpg",
+    "type": "display"
+  },
+  {
+    "name": "Native display",
+    "value": "native-display",
+    "filename": "native-display.jpg",
+    "type": "display"
+  }
+]
