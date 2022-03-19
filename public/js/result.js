@@ -1,4 +1,5 @@
-import fetchUrl from "./fetchUrl.js";
+import { fetchUrl } from "./fetchUrl.js";
+import { createLi, createImg } from "./elements.js";
 
 const data = await fetchUrl("./data.json");
 
@@ -13,35 +14,4 @@ for (let p of params) {
       );
     }
   });
-}
-
-/**
- *
- * @param {HTMLElement} item
- * @returns {HTMLElement}
- */
-function createLi(item = null) {
-  const li = document.createElement("li");
-  if (item) {
-    li.appendChild(item);
-  }
-
-  return li;
-}
-
-/**
- *
- * @param {string} path
- * @param {string} filename
- * @param {string} alt
- * @returns {HTMLImageElement}
- */
-function createImg(path, filename = "", alt = null) {
-  const img = document.createElement("img");
-  img.setAttribute("src", path + filename);
-  if (alt) {
-    img.setAttribute("alt", alt);
-  }
-
-  return img;
 }
