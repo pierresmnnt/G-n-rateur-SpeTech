@@ -54,12 +54,13 @@ export function createInput(value, name) {
 }
 
 /**
- *
+ * @param {string} id
  * @param {HTMLElement|string} item
  * @returns {HTMLElement}
  */
-export function createLi(item = null) {
+export function createLi(id, item = null) {
   const li = document.createElement("li");
+  li.setAttribute("id", id);
   if (item) {
     li.appendChild(item);
   }
@@ -83,4 +84,18 @@ export function createImg(path, filename = "", alt = null) {
   }
 
   return img;
+}
+
+/**
+ *
+ * @param {string} path
+ * @param {string} text
+ * @returns {HTMLImageElement}
+ */
+export function createLink(path, text) {
+  const a = document.createElement("a");
+  a.setAttribute("href", path);
+  a.innerText = text;
+
+  return a;
 }
