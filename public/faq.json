@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "question": "This is a first question",
+    "answer": "This is an answer for the first question"
+  },
+  {
+    "id": 2,
+    "question": "This is a second question",
+    "answer": "This is an answer for the second question"
+  },
+  {
+    "id": 3,
+    "question": "This is a third question",
+    "answer": "This is an answer for the third question"
+  }
+]

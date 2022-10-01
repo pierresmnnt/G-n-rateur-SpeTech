@@ -1,5 +1,4 @@
 /**
- *
  * @param {string} legendTitle
  * @param {array} fields
  * @returns {HTMLElement}
@@ -30,7 +29,6 @@ export function createFieldset(legendTitle = null, fields = null) {
 }
 
 /**
- *
  * @param {string} value
  * @param {string} name
  * @returns {HTMLElement}
@@ -69,7 +67,6 @@ export function createLi(id, item = null) {
 }
 
 /**
- *
  * @param {string} path
  * @param {string} filename
  * @param {string} alt
@@ -87,10 +84,9 @@ export function createImg(path, filename = "", alt = null) {
 }
 
 /**
- *
  * @param {string} path
  * @param {string} text
- * @returns {HTMLImageElement}
+ * @returns {HTMLElement}
  */
 export function createLink(path, text) {
   const a = document.createElement("a");
@@ -98,4 +94,30 @@ export function createLink(path, text) {
   a.innerText = text;
 
   return a;
+}
+
+/**
+ * @param {string} text
+ * @returns {HTMLElement}
+ */
+export function createParagraph(text) {
+  const p = document.createElement("p");
+  p.innerText = text;
+
+  return p;
+}
+
+/**
+ * @param {string} summary
+ * @param {string} text
+ * @returns {HTMLElement}
+ */
+export function createDetails(summary, text) {
+  const details = document.createElement("details");
+  const s = document.createElement("summary");
+  s.innerText = summary;
+  details.appendChild(s);
+  details.appendChild(createParagraph(text));
+
+  return details;
 }
